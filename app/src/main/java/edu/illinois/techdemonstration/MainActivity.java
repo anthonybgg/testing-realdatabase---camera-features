@@ -8,6 +8,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -75,5 +76,10 @@ public class MainActivity extends AppCompatActivity {
         startActivityForResult(imagePicker, IMAGE_GALLERY_REQUEST);
     }
 
-
+    public void openCamera(View view) {
+        Intent cameraIntent = new Intent (MediaStore.ACTION_IMAGE_CAPTURE);
+        if (cameraIntent.resolveActivity(getPackageManager()) != null) {
+            startActivityForResult(cameraIntent,CAMERA_REQUEST);
+        }
+    }
 }
