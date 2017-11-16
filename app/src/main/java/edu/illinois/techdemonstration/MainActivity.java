@@ -63,7 +63,6 @@ public class MainActivity extends AppCompatActivity {
     public void getImageInGallery(View view) {
 
         Intent imagePicker = new Intent(Intent.ACTION_PICK);
-
         // Tutorial video where I borrowed this fragment of code.
         // https://www.youtube.com/watch?v=wBuWqqBWziU by Brandon Jones.
 
@@ -77,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openCamera(View view) {
+
         Intent cameraIntent = new Intent (MediaStore.ACTION_IMAGE_CAPTURE);
         if (cameraIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(cameraIntent,CAMERA_REQUEST);
