@@ -3,4 +3,7 @@
     <string name="open_camera">Open Camera</string>
     <string name="picture_taken">picture Taken</string>
     <string name="add_image">Add image</string>
+    <string name="button">Log In</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Email</string>
 </resources>
