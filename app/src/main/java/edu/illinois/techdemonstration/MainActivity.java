@@ -11,7 +11,6 @@ import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -33,7 +32,14 @@ public class MainActivity extends AppCompatActivity {
         final Button camera = (Button) findViewById(R.id.button);
         final Button gallery = (Button) findViewById(R.id.button2);
         imageView = (ImageView) findViewById(R.id.imageView);
-
+        final Button authActivity = (Button) findViewById(R.id.authenticate);
+        authActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, LogInActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

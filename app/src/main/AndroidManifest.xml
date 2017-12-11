@@ -3,7 +3,7 @@
     package="edu.illinois.techdemonstration">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".LogInActivity" />
-        <activity android:name=".AccountActivity"></activity>
+        <activity android:name=".AccountActivity"/>
     </application>
 
 </manifest>

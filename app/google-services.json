@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "746191944644",
+    "firebase_url": "https://tech-demonstration-46173.firebaseio.com",
+    "project_id": "tech-demonstration-46173",
+    "storage_bucket": "tech-demonstration-46173.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746191944644:android:8c3c92acc5929740",
+        "android_client_info": {
+          "package_name": "edu.illinois.techdemonstration"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "746191944644-n8ngn7e2hq2v5q6tpv0rfjfhjfh4qhmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.illinois.techdemonstration",
+            "certificate_hash": "0d001b58d6477a37de614f39f2703560f1c9b473"
+          }
+        },
+        {
+          "client_id": "746191944644-kgtl45n3gprunb5q0btshug8ofiu8si2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDT9GqVcvFLtqAqUxILH6QdGJgEL7XRKGk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "746191944644-kgtl45n3gprunb5q0btshug8ofiu8si2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -33,15 +33,6 @@ public class LogInActivity extends AppCompatActivity {
         email = (EditText) findViewById(R.id.email);
         password = (EditText) findViewById(R.id.password);
 
-        authStateListener = new FirebaseAuth.AuthStateListener() {
-            @Override
-            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-               if (firebaseAuth.getCurrentUser() != null) {
-                   startActivity(new Intent(LogInActivity.this, AccountActivity.class));
-               }
-            }
-        };
-
         logIn = (Button) findViewById(R.id.logInButton);
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +54,9 @@ public class LogInActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (!task.isSuccessful()) {
                         Toast.makeText(LogInActivity.this, "Incorrect password or email", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(LogInActivity.this, "Success!", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(LogInActivity.this, AccountActivity.class));
                     }
                 }
             });

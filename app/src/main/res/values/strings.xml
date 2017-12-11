@@ -6,4 +6,7 @@
     <string name="button">Log In</string>
     <string name="enter_password">Enter Password</string>
     <string name="enter_email">Enter Email</string>
+    <string name="authenticate">Authenticate</string>
+    <string name="authenticate_button">Authenticate</string>
+    <string name="successfully_logged_in">Successfully LOGGED IN!</string>
 </resources>
